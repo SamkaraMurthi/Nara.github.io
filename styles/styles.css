@@ -115,8 +115,7 @@ a {
 /* Layouts */
 .grid-3 {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
 }
 
@@ -202,34 +201,34 @@ nav ul li a {
 }
 
 
-/* Services Section */
-#services {
+/* Interest Section */
+#interests {
     background-color: var(--secondaryBackgroundColor);
     padding: var(--sectionPadding);
   }
   
-  .services .pre-title {
+  .interests .pre-title {
     margin: 0 auto;
   }
   
-  .services-title {
+  .interests-title {
     text-align: center;
   }
   
-  .service {
+  .interest {
     padding: 3rem 2rem;
     text-align: center;
     background: var(--primaryBackgroundColor);
     border-radius: var(--itemBorderRadius);
   }
   
-  .service h4 {
+  .interest h4 {
     margin: 1.5rem 0;
     font-weight: 500;
     font-size: 1.05rem;
   }
   
-  .service-icon {
+  .interest-icon {
     background: var(--thirdBackgroundColor);
     width: fit-content;
     margin: 0 auto;
@@ -237,11 +236,11 @@ nav ul li a {
     border-radius: 0.5rem;
   }
   
-  .service-icon svg {
+  .interest-icon svg {
     fill: var(--primaryIconColor);
   }
   
-  .service-icon {
+  .interest-icon {
     background: var(--thirdBackgroundColor);
     width: fit-content;
     margin: 0 auto;
@@ -249,10 +248,65 @@ nav ul li a {
     border-radius: 0.5rem;
   }
   
-  .service-icon svg {
+  .interest-icon svg {
     fill: var(--primaryIconColor);
   }
 
+
+  /* Languages Section */
+#languages {
+  background-color: var(--secondaryBackgroundColor);
+  padding: var(--sectionPadding);
+}
+
+.languages .pre-title {
+  margin: 0 auto;
+}
+
+.languages-title {
+  text-align: center;
+}
+
+.language{
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--primaryBackgroundColor);
+  border-radius: var(--itemBorderRadius);
+}
+
+.language h4 {
+  margin: 1.5rem 0;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.language-icon {
+  background: var(--thirdBackgroundColor);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.language-icon svg {
+  fill: var(--primaryIconColor);
+}
+
+.language-icon {
+  background: var(--thirdBackgroundColor);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.language-icon svg {
+  fill: var(--primaryIconColor);
+}
+/*End of Languages Section*/
+
+
+  
   /* Portfolios */
 #portfolios {
     padding: var(--sectionPadding);
@@ -260,7 +314,7 @@ nav ul li a {
   
   .portfolio {
     border-radius: var(--itemBorderRadius);
-    overflow: hidden; /* supaya gambar yang diatas itu dia ngikut border radiusnya, karena yang dikasih border radius disini adalah div portfolio ini */
+    overflow: hidden;
     border: 1px solid var(--borderColor);
   }
   
@@ -385,7 +439,6 @@ nav ul li a {
   
   .contact {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
   }
